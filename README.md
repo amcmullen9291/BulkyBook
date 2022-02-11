@@ -1,3 +1,3 @@
 # BulkyBook
 
-application created using Visual Code 2022
+Created with Visual Code 2022. Edited in VScode.
