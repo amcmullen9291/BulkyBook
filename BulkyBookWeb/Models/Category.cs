@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+
 namespace BulkyBookWeb.Models;
 
 public class Category
@@ -8,7 +9,7 @@ public class Category
     [Key]    //Don't forget to import the Library. Sets column as Primary key (Identity Column)
     public int Id { get; set; } //keyword 'prop' + enterKey
     [Required]    //Same as null:false;
-    public string Name { get; set; } = "guest";
+    public string Name { get; set; } = default!;
     public int DisplayOrder { get; set; }
     public DateTime CreateDateTime { get; set; } = DateTime.Now; //sets default
 }
