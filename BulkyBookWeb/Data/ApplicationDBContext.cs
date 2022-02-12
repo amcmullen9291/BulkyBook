@@ -9,6 +9,8 @@ public class ApplicationDbContext : DbContext
     }
 
     public DbSet<Category> Categories { get; set; } //the model and table name
+
+    public DbSet<Person> People { get; set; } //the model and table name
 }
 
 //configuration syntax inside 'constructor' is saying: Recieved options will be passed to the base class, DBContext.
