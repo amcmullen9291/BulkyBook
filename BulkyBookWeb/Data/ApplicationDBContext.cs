@@ -1,16 +1,11 @@
 using Microsoft.EntityFrameworkCore;
 using BulkyBookWeb.Models;
 namespace BulkyBookWeb.Data;
-public class ApplicationDbContext :DbContext
+public class ApplicationDbContext : DbContext
 {
-    // public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) //keyword 'ctor'
-    // {
-        
-    // }
-
-    public ApplicationDbContext(DbSet<Category> categories)
+    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) //keyword 'ctor'
     {
-        Categories = categories;
+
     }
 
     public DbSet<Category> Categories { get; set; } //the model and table name
