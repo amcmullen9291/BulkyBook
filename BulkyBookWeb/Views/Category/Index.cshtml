@@ -1,8 +1,27 @@
-@{
+@model IEnumerable<Category>
+    @* request or import import var created in controller that connects to the instance of the ApplicationDbContext. dont forget the @ sign *@
+    @{
     ViewData["Title"] = "IndexPage title";
-}
+    }
 
-<div class="text-center">
-    <h1 class="display-4">Category Index</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+        <h1 class="display-4">Category Index</h1>
+
+    <table class="table table-border table-striped" style="width:100vw">
+        <thead>
+            <tr>
+                <th>Category Name</th>
+                <th>Display Order</th>
+                <th>Date/Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var obj in Model)
+            {
+            <tr>
+                <td width="60%">@obj.Name</td>
+                <td width="30%">@obj.DisplayOrder</td>
+                <td width="30%">@obj.CreateDateTime</td>
+            </tr>
+            }
+        </tbody>
+    </table>
