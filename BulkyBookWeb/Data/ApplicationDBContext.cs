@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-
+using BulkyBookWeb.Models;
 namespace BulkyBookWeb.Data;
 public class ApplicationDbContext :DbContext
 {
