@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 namespace BulkyBookWeb.Models;
 
-public class Categroy
+public class Category
 { // notice curlybrace starts a new line?
 
 
