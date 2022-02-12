@@ -12,3 +12,4 @@ public class ApplicationDbContext : DbContext
 }
 
 //configuration syntax inside 'constructor' is saying: Recieved options will be passed to the base class, DBContext.
+//Note: FILENAME, CLASSNAME, AND references need to match!!!....
